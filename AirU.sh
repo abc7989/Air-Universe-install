@@ -85,7 +85,7 @@ before_show_menu() {
 
 install() {
     bash -c "$(curl -L https://github.com/crossfw/Xray-install/raw/main/install-release.sh)" @ install
-    bash <(curl -Ls https://raw.githubusercontent.com/abc7989/Air-Universe-install/master/install.sh) $1 $2
+    bash <(curl -Ls https://raw.githubusercontent.com/abc7989/Air-Universe-install/master/install.sh) $2 $3
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
