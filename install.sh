@@ -265,8 +265,8 @@ createService() {
   systemctl daemon-reload
 }
 
-pUrl = $1
-nKey = $2
+pUrl=$1
+nKey=$2
 read -r -p "Enter node_ids, (eg 1,2,3): " nIds
 
 check_root
