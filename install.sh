@@ -21,7 +21,7 @@ panelConfig() {
   #read -r -p "Enter panel domain(Include https:// or http://): " pUrl
   #read -r -p "Enter panel token: " nKey
   #read -r -p "Enter node_ids, (eg 1,2,3): " nIds
-  #echo && echo -e "Choose panel type:
+  echo && echo -e "Choose panel type:
   1. SSPanel
   2. V2board
   3. Django-sspanel"
