@@ -591,8 +591,6 @@ show_usage() {
 }
 
 show_menu() {
-    echo $1
-    echo $2
     echo -e "
   ${green}Air-Universe 后端管理脚本，${plain}${red}不适用于docker${plain}
 --- https://github.com/crossfw/Air-Universe ---
