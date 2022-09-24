@@ -270,6 +270,8 @@ initializeArgu(){
   pUrl=$1
   nKey=$2
   read -r -p "Enter node_ids, (eg 1,2,3): " nIds
+  echo "web: $1"
+  echo "key: $2"
 }
 
 initializeArgu
