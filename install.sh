@@ -26,6 +26,7 @@ panelConfig() {
   #2. V2board
   #3. Django-sspanel"
   #read -r -p "Choose panel type: " panelnum
+  panelnum=1
   if [ "$panelnum" == "1" ]; then
     panelType="sspanel"
   fi
