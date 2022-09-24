@@ -85,7 +85,7 @@ before_show_menu() {
 
 install() {
     bash -c "$(curl -L https://github.com/crossfw/Xray-install/raw/main/install-release.sh)" @ install
-    bash <(curl -Ls https://raw.githubusercontent.com/abc7989/Air-Universe-install/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/abc7989/Air-Universe-install/master/install.sh) $1 $2
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -591,6 +591,8 @@ show_usage() {
 }
 
 show_menu() {
+    echo $1
+    echo $2
     echo -e "
   ${green}Air-Universe 后端管理脚本，${plain}${red}不适用于docker${plain}
 --- https://github.com/crossfw/Air-Universe ---
