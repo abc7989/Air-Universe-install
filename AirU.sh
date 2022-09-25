@@ -84,8 +84,9 @@ before_show_menu() {
 }
 
 install() {
+    read -r -p "Enter node_ids, (eg 1,2,3): " nIds
     bash -c "$(curl -L https://github.com/crossfw/Xray-install/raw/main/install-release.sh)" @ install
-    bash <(curl -Ls https://raw.githubusercontent.com/abc7989/Air-Universe-install/master/install.sh) $1 $2
+    bash <(curl -Ls https://raw.githubusercontent.com/abc7989/Air-Universe-install/master/install.sh) $1 $2 nIds
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
